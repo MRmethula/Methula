@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Methula Minslu 🎂</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .birthday-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 60px 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            color: white;
+            animation: appear 1.5s ease;
+        }
+
+        .birthday-card h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .birthday-card p {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+
+        .creator {
+            margin-top: 35px;
+            font-size: 16px !important;
+            opacity: 0.9;
+        }
+
+        .balloon {
+            position: absolute;
+            font-size: 50px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .b1 {
+            top: 10%;
+            left: 10%;
+        }
+
+        .b2 {
+            top: 20%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .b3 {
+            bottom: 10%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .b4 {
+            bottom: 15%;
+            right: 15%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .birthday-card {
+                margin: 20px;
+                padding: 45px 20px;
+            }
+
+            .birthday-card h1 {
+                font-size: 35px;
+            }
+
+            .birthday-card p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+    <div class="balloon b4">🎈</div>
+
+    <div class="birthday-card">
+
+        <h1>🎂 Happy Birthday 🎂</h1>
+
+        <h2>Methula Minslu</h2>
+
+        <p>🥳 Have a wonderful birthday! 🎉</p>
+
+        <p class="creator">Created by Ridma ❤️</p>
+
+    </div>
+
+</body>
+</html>
